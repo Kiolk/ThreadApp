@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TimerApp</string>
+    <string name="FIRST_THREAD">First thread implement Runnable interface</string>
+    <string name="ASYNC_TASK">AsyncTask Thread</string>
+    <string name="EXECUTOR_THREAD">Executor thread</string>
+    <string name="HINT_FOR_EXECUTOR_THREAD">Enter number for Executor thread</string>
+    <string name="FIRST_WORDS">If in game Bulls and Cows every time input number:</string>
+</resources>

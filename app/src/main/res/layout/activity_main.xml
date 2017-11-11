@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/generalBackgroundColor"
+    android:padding="4dp"
+    tools:context="comkiolk.github.timerapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        style="@style/blockStyle">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/textStyle"
+            android:textSize="24sp"
+            android:text="@string/FIRST_WORDS"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        style="@style/blockStyle"
+        android:elevation="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/thread_1_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:text="adfgdnfgdf,dsmfgsdmfgnsd,kop344545l"
+            style="@style/textStyle"/>
+
+        <TextView
+            android:id="@+id/thread_async_task_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/textStyle"/>
+
+        <TextView
+            android:id="@+id/thread_executor_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/textStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/blockStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:elevation="1dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/thread_1_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/FIRST_THREAD"/>
+
+        <Button
+            android:id="@+id/thread_async_task_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/ASYNC_TASK"/>
+
+        <Button
+            android:id="@+id/thread_executor_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/EXECUTOR_THREAD"/>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/blockStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/my_rectangle_block_red">
+
+        <EditText
+            android:id="@+id/input_number_for_executors_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/HINT_FOR_EXECUTOR_THREAD"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/blockStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</LinearLayout>
